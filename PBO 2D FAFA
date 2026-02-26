@@ -1,0 +1,45 @@
+// Class Person
+class Person {
+    // Atribut (private agar aman)
+    private String name;
+    private int age;
+    private String city;
+
+    // Constructor
+    public Person(String name, int age, String city) {
+        this.name = name;
+        this.age = age;
+        this.city = city;
+    }
+
+    // Getter dan Setter
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    // Method untuk menampilkan informasi
+    public void displayInfo() {
+        System.out.println("Nama  : " + name);
+        System.out.println("Umur  : " + age);
+        System.out.println("Kota  : " + city);
+    }
+}
+
+// Class utama
+public class Main {
+    public static void main(String[] args) {
+        // Membuat object dari class Person
+        Person person1 = new Person("Muhammad Fawazul Haq", 20, "Surabaya");
+        
+        // Mengubah umur dan kota langsung
+        person1.setAge(20);
+        person1.setCity("Surabaya");
+
+        // Menampilkan informasi akhir
+        person1.displayInfo();
+    }
+}
